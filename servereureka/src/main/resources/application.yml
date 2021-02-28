@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  #ereuka服务的端口，这里端口号必须和下面defaultZone端口号一致！！！
+  port: 8761
+#eureka相关配置
+eureka:
+  client:
+    register-with-eureka: false   #false 表示不向注册中心中注册自己
+    fetch-registry: false   #false 表示自己端就是注册中心,我的职责就是维护服务实例，并不需要去检索服务
+    service-url:
+      #表示搭建eureka服务端集群,地址以','隔开，并且要把自我注册和发现全部设为true{因为你有小伙伴了，要相互知道,并且你也可以去找其他服务端你没有的服务，一样可以消费}
+      #      defaultZone: http://localhost:8761/eureka,http://localhost:8762/eureka
+      #eureka服务端单机版{不需要自我注册和发现}(下面是服务暴露的地址)
+      defaultZone: http://localhost:8761/eureka
+  server:
+    # 服务失效剔除时间间隔，默认60秒
+    eviction-interval-timer-in-ms: 60000
+    # 关闭自我保护模式（默认是打开的）
+    enable-self-preservation: false

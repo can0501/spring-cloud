@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="clienteureka" />
-        <module name="consumerereureka" />
         <module name="providereureka" />
+        <module name="consumerereureka" />
       </profile>
     </annotationProcessing>
   </component>

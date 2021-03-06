@@ -1,4 +1,4 @@
-package com.example.eurekaclient;
+package com.example.dubbo_provider;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

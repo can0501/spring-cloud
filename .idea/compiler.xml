@@ -9,6 +9,7 @@
         <module name="clienteureka" />
         <module name="providereureka" />
         <module name="consumerereureka" />
+        <module name="dubbo-provider" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="clienteureka" options="-parameters" />
       <module name="consumerereureka" options="-parameters" />
+      <module name="dubbo-provider" options="-parameters" />
       <module name="providereureka" options="-parameters" />
       <module name="spring-cloud" options="-parameters" />
     </option>

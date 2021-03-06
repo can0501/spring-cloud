@@ -21,6 +21,7 @@
         <module>servereureka</module>
         <module>providereureka</module>
         <module>comsumereureka</module>
+        <module>dubbo/dubbo-provider</module>
     </modules>
 
     <properties>
